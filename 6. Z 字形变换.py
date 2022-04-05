@@ -8,17 +8,17 @@ class Solution(object):
         s = list(s)
         outs = []
         for i in range(numRows):
-            if i == 0:
-                a = 0
+            if i == 0 or i == numRows-1:
+                a = i
                 while a < len(s):
                     outs.append(s[a])
                     a += 2*numRows - 2
 
-            if i == numRows-1:
-                a = numRows-1
-                while a < len(s):
-                    outs.append(s[a])
-                    a += 2*numRows - 2
+            # if i == numRows-1:
+            #     a = numRows-1
+            #     while a < len(s):
+            #         outs.append(s[a])
+            #         a += 2*numRows - 2
 
             if i != numRows-1 and i != 0:
                 a = i
@@ -39,5 +39,3 @@ if __name__ == '__main__':
     S = Solution()
     out = S.convert(s,numRows)
     print(out)
-
-# PAHNAPLSIIGYIR
