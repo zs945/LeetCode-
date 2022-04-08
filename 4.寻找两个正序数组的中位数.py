@@ -19,12 +19,12 @@ class Solution(object):
             return 0
 
 if __name__ == '__main__':
-    nums1 = [1, 3]
-    nums2 = [2]
+    nums1 = [1,2]
+    nums2 = [3,4]
     C = Solution()
     median = C.findMedianSortedArrays(nums1, nums2)
     print(median)
-    nums3 = [1,2]
-    nums4 = [3,4]
-    median2 = C.findMedianSortedArrays(nums3, nums4)
-    print(median2)
+    # nums3 = [1,2]
+    # nums4 = [3,4]
+    # median2 = C.findMedianSortedArrays(nums3, nums4)
+    # print(median2)

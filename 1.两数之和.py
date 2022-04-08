@@ -16,6 +16,7 @@ class Solution( object ):
             if another_num in hashmap.values():
                 # return [hashmap.keys(another_num), index]
                 return [list(hashmap.values()).index(another_num), index]
+                # return [list(hashmap.keys())[list(hashmap.values()).index(another_num)], index]
                 # print("y")
             hashmap[index] = num
             # print(hashmap)
@@ -24,7 +25,7 @@ class Solution( object ):
 if __name__ == "__main__":
     c= Solution()
     nums = [2, 7, 11, 15]
-    target = 9
+    target = 13
     # c.twoSum( nums, target )
     out = c.twoSum(nums,target)
     print(out)

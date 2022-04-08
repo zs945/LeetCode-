@@ -4,7 +4,9 @@ class Solution(object):
         result = []
         while number:
             result.append( number % 10 )
+            # 对十取余
             number = number // 10
+            # 除10取整
         # 逆序，按正常的顺序返回
         # result.reverse()
         return result
